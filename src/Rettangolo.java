@@ -4,14 +4,14 @@ public class Rettangolo {
 
 	/*  Mi istanzio tutte le variabili relative alla classe Rettangolo */
 	
-
+	int base ;
 	int altezza ;
 	int perimetro ;
 	int area ;
 	
 	/* Getters & Setters */
 
-	int base ;
+	
 	public int getBase() {
 		return base;
 	}
@@ -55,7 +55,9 @@ public class Rettangolo {
 	/* Creo i metodi  per i calcoli di perimetro , area e modifiche */
 	
 	public int perimetro (int base , int altezza) {
+		
 		perimetro = 2*(base + altezza );
+		
 		return perimetro ;
 	}
 	

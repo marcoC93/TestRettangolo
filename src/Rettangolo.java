@@ -1,17 +1,17 @@
-
+import java.util.Scanner;
 
 public class Rettangolo {
 
 	/*  Mi istanzio tutte le variabili relative alla classe Rettangolo */
-	
+
 	int base ;
 	int altezza ;
 	int perimetro ;
 	int area ;
-	
+
 	/* Getters & Setters */
 
-	
+
 	public int getBase() {
 		return base;
 	}
@@ -53,21 +53,32 @@ public class Rettangolo {
 
 
 	/* Creo i metodi  per i calcoli di perimetro , area e modifiche */
-	
+
 	public int perimetro (int base , int altezza) {
-		
+
 		perimetro = 2*(base + altezza );
-		
+
 		return perimetro ;
 	}
-	
-	
+
+
 	public int area (int base, int altezza) {
-		
+
 		area = base * altezza ;
-		
-		return area ;
+
+		return area  ;
 	}
-	
-	
+
+	public void ridimensiona () {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Definisci la nuova base");
+		base = s.nextInt();
+		System.out.println("Definisci la nuova altezza");
+		altezza = s.nextInt();
+
+
+		perimetro(base , altezza) ;
+		perimetro(base , altezza) ;
+	}	  
+
 }

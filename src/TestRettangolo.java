@@ -31,8 +31,8 @@ public class TestRettangolo {
 	// Output
 	
 	
-	System.out.println(rettangolo1.getPerimetro());
-	System.out.println(rettangolo1.getArea());	
+//	System.out.println("Perimetro 1o rettangolo " + rettangolo1.getPerimetro());
+//	System.out.println("Area 1o rettangolo " + rettangolo1.getArea());	
 	
 	//
 	
@@ -46,8 +46,8 @@ public class TestRettangolo {
 	
 	// Output
 	
-//	System.out.println(rettangolo2.getPerimetro());
-//	System.out.println(rettangolo2.getArea());
+//	System.out.println("Perimetro 2o rettangolo " + rettangolo2.getPerimetro());
+//	System.out.println("Area 2o rettangolo " + rettangolo2.getArea());
 	
 	//
 	
@@ -61,15 +61,20 @@ public class TestRettangolo {
 	
 	// Output
 	
-	System.out.println(rettangolo3.getPerimetro());
-	System.out.println(rettangolo3.getArea());
+	System.out.println("Perimetro 3o rettangolo " + rettangolo3.getPerimetro());
+	System.out.println("Area 3o rettangolo " + rettangolo3.getArea());
 
 	totaleAree = rettangolo1.getArea() + rettangolo2.getArea() + rettangolo3.getArea() ;
 	totalePerimetri =rettangolo1.getPerimetro() + rettangolo2.getPerimetro() + rettangolo3.getPerimetro() ;
 	
-	System.out.println(totaleAree);
-	System.out.println(totalePerimetri);
+//	System.out.println("Questo é il totale delle aree " + totaleAree);
+//	System.out.println("Questo é il totale dei perimetri " + totalePerimetri);
 	
+	
+	rettangolo3.ridimensiona();
+	
+	System.out.println("nuovo perimetro " + rettangolo3.getPerimetro());
+	System.out.println("nuova Area " + rettangolo3.getArea());
 	}
 
 }

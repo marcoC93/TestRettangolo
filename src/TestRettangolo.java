@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /* Scrivere una classe Rettangolo i cui oggetti rappresentano rettangoli. Lo stato interno di
 un rettangolo `e dato dai valori della base e dell’altezza. Un rettangolo deve mettere a disposizione tre
 operazioni: ridimensiona() che prende come parametri due nuovi valori di base e altezza e aggiorna
@@ -12,6 +14,7 @@ public class TestRettangolo {
 
 	public static void main(String[] args) {
 
+	Scanner s = new Scanner(System.in);	
 	Rettangolo rettangolo1 = new Rettangolo() ;
 	Rettangolo rettangolo2 = new Rettangolo() ;
 	Rettangolo rettangolo3 = new Rettangolo() ;
@@ -19,9 +22,16 @@ public class TestRettangolo {
 	int totaleAree ;
 	
 	/* setto le misure per il 1o rettangolo */
+	System.out.println("Definire la base");
+	int base = s.nextInt(); 
 	
-	rettangolo1.setBase(2);
-	rettangolo1.setAltezza(3);
+	rettangolo1.setBase(base);
+	
+	
+	System.out.println("Definire l'altezza");
+	s.nextLine();
+	int altezza = s.nextInt(); 
+	rettangolo1.setAltezza(altezza);
 	
 	/* Eseguo le operazioni richieste */
 	
@@ -31,8 +41,8 @@ public class TestRettangolo {
 	// Output
 	
 	
-//	System.out.println("Perimetro 1o rettangolo " + rettangolo1.getPerimetro());
-//	System.out.println("Area 1o rettangolo " + rettangolo1.getArea());	
+	System.out.println("Perimetro 1o rettangolo " + rettangolo1.getPerimetro());
+	System.out.println("Area 1o rettangolo " + rettangolo1.getArea());	
 	
 	//
 	

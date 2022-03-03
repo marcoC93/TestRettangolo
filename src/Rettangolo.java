@@ -4,10 +4,10 @@ public class Rettangolo {
 
 	/*  Mi istanzio tutte le variabili relative alla classe Rettangolo */
 
-	int base ;
-	int altezza ;
-	int perimetro ;
-	int area ;
+	private int base ;
+	private int altezza ;
+	private int perimetro ;
+	private int area ;
 
 	/* Getters & Setters */
 
